@@ -3,7 +3,7 @@
 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
     ¿Qué es una variable y para qué sirve?
-        Es un espacio en memoria identificado por un nombre único con la capacidad de almacenar algún valor.
+        Espacio en memoria identificado por un nombre único con la capacidad de almacenar algún valor.
     ¿Cuál es la diferencia entre declarar e inicializar una variable?
         Se declara cuando la variable se nombra y se inicializa cuando se le asigna algún valor.
     ¿Cuál es la diferencia entre sumar números y concatenar strings?
@@ -46,4 +46,32 @@
         var debt = 12000;
         let real = saving - debt; 
         console.log("Dinero real: "+real);
+
+<h1>Funciones</h1>
+
+1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+
+    ¿Qué es una función?
+        Bloques de código que realizan una serie de operaciones y devuelven algún resultado.
+    ¿Cuándo me sirve usar una función en mi código?
+        Cuando el programa repite en varios lugares operaciones que podemos reutilizar.
+    ¿Cuál es la diferencia entre parámetros y argumentos de una función?
+        Los parámetros son aquellos declarados por su nombre en la función 
+        y los argumentos son los valores que enviamos a esta.
+
+2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
+
+    const name = "Juan David";
+    const lastname = "Castro Gallego";
+    const completeName = name + lastname;
+    const nickname = "juandc"
+    console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+
+Respuesta:
+
+    function salida(name, lastname, nickname){
+        var completeName = name +" "+lastname;
+        console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+    }
+    salida("Juan David", "Castro Gallego", "juandc");
 
