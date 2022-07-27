@@ -169,7 +169,8 @@ Resultado:
     ¿Qué tipos de ciclos existen en JavaScript?     
         For, while, do while
     ¿Qué es un ciclo infinito y por qué es un problema?
-        Sucede cuando no se controla mediante alguna condición valida el fin del ciclo, lo que puede provocar una saturación de memoria.
+        Sucede cuando no se controla mediante alguna condición valida 
+	el fin del ciclo, lo que puede provocar una saturación de memoria.
     ¿Puedo mezclar ciclos y condicionales?
         Sí, es posible.
 
@@ -228,5 +229,41 @@ Respuesta:
         Sí para cada caso se especifica como tipo de dato que almacenara en su sección o nivel dado.
 
 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+
+	let huesos = ["Húmero", "Costilla", "Cubito", "Radio", "Craneo","Peroné"];
+	
+	function takeArray(miArray){
+		console.log("First value: "+ miArray[0]);
+		console.log("List of elements: ");
+	}
+
+	takeArray(huesos);
+
 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+
+	let huesos = ["Húmero", "Costilla", "Cubito", "Radio", "Craneo","Peroné"];
+
+	function takeArray(miArray){
+		console.log("List of elements: ");
+		miArray.forEach(element => console.log(element));
+	}
+
+	takeArray(huesos);
+
 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+
+	let mariposas = {
+		"Monarca" : "Danaus plexippus",
+		"Cebra" : "Heliconius charithonia",
+		"reina" : "Danaus gilippus",
+		"alas de telaraña" : "Leptotes marina"
+	}
+
+	function takeObject(obj){
+		console.log("List of elements: ");
+		for (var i in obj) {
+			console.log(mariposas[i]);
+		}
+	}
+
+	takeObject(mariposas);
