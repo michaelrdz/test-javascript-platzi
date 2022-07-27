@@ -1,4 +1,7 @@
 # test-javascript-platzi
+
+Test inicial del curso [Nuevo Curso Práctico de JavaScript](https://platzi.com/cursos/javascript-practico/) de Platzi
+
 ## Variables y operaciones 🛸
 
 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
@@ -26,25 +29,25 @@
 
 3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
 
-    var name = "Michael";
-    var Lastname = "Rodríguez Medina";
-    var user = "michaelrdz";
-    var age = 29;
-    var email = "michaelrdz.me@gmail.com";
-    var mayor = true;
-    var saving = 65000;
-    var debt = 12000;
+    let name = "Michael";
+    let Lastname = "Rodríguez Medina";
+    let user = "michaelrdz";
+    let age = 29;
+    let email = "michaelrdz.me@gmail.com";
+    let mayor = true;
+    let saving = 65000;
+    let debt = 12000;
 
 4️⃣ Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
 
     //Nombre completo (nombre y apellido):
-        var name = "Michael";
-        var lastName = "Rodríguez Medina";
+        let name = "Michael";
+        let lastName = "Rodríguez Medina";
         console.log("Nombre completo: "+name+" "+lastname);
     
     //Dinero real (dinero ahorrado menos deudas)
-        var saving = 65000;
-        var debt = 12000;
+        let saving = 65000;
+        let debt = 12000;
         let real = saving - debt; 
         console.log("Dinero real: "+real);
 
@@ -71,7 +74,7 @@
 Respuesta:
 
     function salida(name, lastname, nickname){
-        var completeName = name +" "+lastname;
+        let completeName = name +" "+lastname;
         console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
     }
     salida("Juan David", "Castro Gallego", "juandc");
@@ -125,7 +128,7 @@ Resultado:
 3️⃣ Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
 
     const tipoDeSuscripcion = "Basic";
-    var tipoExist = false;
+    let tipoExist = false;
 
     if(tipoDeSuscripcion === "Free"){
 	    console.log("Solo puedes tomar los cursos gratis");
