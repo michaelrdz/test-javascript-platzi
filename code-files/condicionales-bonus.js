@@ -1,0 +1,1 @@
+//Solución utilizando un objeto que guarde los mensajes posibles.
